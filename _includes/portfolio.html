@@ -1,0 +1,24 @@
+<section class="portfolio-container col-xs-12 col-sm-8">
+
+  <ul class="portfolio">
+    {% for post in site.posts %}
+      <li class="portfolio-item {{ post.portfolio-class }}">
+        <p>{{ post.item-number }} / {{ site.posts.size }}</p>
+        
+        <img src="/assets/{{ post.preview-img }}" alt="">
+        <div class="row">
+        <div class="col-sm-6 text-left">
+          <h5>{{ post.title }}</h5>
+          <p>{{ post.role }}</p>
+        </div>
+
+        <div class="col-sm-6 text-right">
+          <!-- ADD IF statement to switch between 'view site' and 'more details' -->
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">View Site</a>
+        </div>
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+
+</section>

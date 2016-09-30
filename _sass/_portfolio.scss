@@ -1,0 +1,32 @@
+/**
+ * Portfolio Layout classes
+ */
+.portfolio-container {
+
+	padding: 0;
+
+	.portfolio {
+
+		height: calc(100vh - 30px);
+		overflow: auto;
+		margin: 0;
+
+		.portfolio-item {
+			padding: 25px;
+
+			img {
+				width: 100%;
+				margin: 0 auto;
+			}
+		}
+
+	}
+
+}
+
+
+/**
+ * Portfolio Item classes
+ */
+.tnp { background-color: #ff5b35; }
+.bb { background-color: #ffcc56; }
