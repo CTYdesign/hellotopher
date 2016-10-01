@@ -1,21 +1,11 @@
 <header class="col-xs-12 col-sm-4 pull-right">
 
-  <img src="https://dummyimage.com/250x150/454545/ffffff" alt="">
-  <h1>{{ site.subhead }}</h1>
+  <img src="/assets/logo.png" alt="" class="logo">
+  <h1 class="subheader">{{ site.subhead }}</h1>
   <p>{{ site.description }}</p>
 
-  <ul class="social-media">
-    {% if site.github_username %}
-    <li>
-      {% include icon-github.html username=site.github_username %}
-    </li>
-    {% endif %}
-
-    {% if site.twitter_username %}
-    <li>
-      {% include icon-twitter.html username=site.twitter_username %}
-    </li>
-    {% endif %}
-  </ul>
+  <button class="btn-primary">
+    <a href="">View My Resume</a>
+  </button>
 
 </header>

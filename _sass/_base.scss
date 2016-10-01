@@ -13,11 +13,11 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 html {
-    background-color: $white;
+    background-color: $background-color;
 }
 
 .site-content {
-    background-color: #efefef;
+    background-color: $content-bg-color;
     margin: 15px;
 }
 
@@ -26,7 +26,28 @@ html {
  */
  header {
  	text-align: center;
+
+ 	.subheader {
+ 		color: #c31;
+ 		margin: 0 0 25px 0;
+ 		font-size: 24px;
+ 	}
+
+ 	.logo {
+ 		height: auto;
+ 		width: 220px;
+ 	}
 	
+	p {
+		width: 325px;
+		margin: 0 auto;
+		padding-bottom: 35px;
+	}
+
+	img {
+		margin: 75px 0 5px 0;
+	}
+
 	.social-media {
 		list-style: none;
     margin-left: 0;
@@ -35,6 +56,38 @@ html {
     	width: 45px;
     	height: auto;
     }
+	}
+ }
+
+
+/**
+ * Typography
+ */
+* {
+	font-family: $base-font-family;
+	color: $text-color;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: $header-font-family;
+	color: $text-color;
+	text-transform: uppercase;
+}
+
+/**
+ * Typography
+ */
+ .btn-primary {
+ 	width: 200px;
+ 	padding: 0;
+ 	border: 2px solid #454545;
+ 	background-color: transparent;
+	
+	a {
+		display: block;
+		padding: 10px;
+		width: 100%;
+		height: 100%;
 	}
 
  }

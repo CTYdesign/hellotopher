@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "The New Primal"
-permalink: thenewprimal
-portfolio-class: tnp
-item-number: 2
+title:  "Marvin User Controlled Radio"
+permalink: marvin
+portfolio-class: marvin
+item-number: 5
 preview-img: tnp-cover.png
 role: "Design/Front-End Development"
 item-url: http://thenewprimal.com
