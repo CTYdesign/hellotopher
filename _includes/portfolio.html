@@ -1,11 +1,18 @@
-<section class="portfolio-container col-xs-12 col-sm-8">
+<section class="portfolio-container col-xs-12 col-md-8">
 
   <ul class="portfolio">
     {% for post in site.posts %}
-      <li class="portfolio-item {{ post.portfolio-class }}">
+
+      {% if post.item-url %}
+        {% assign a-url = post.item-url %}
+      {% else %}
+        {% assign a-url = post.url | prepend: site.baseurl %}
+      {% endif %}
+
+      <li class="portfolio-item white-text {{ post.portfolio-class }}">
         <p>{{ post.item-number }} / {{ site.posts.size }}</p>
         
-        <img src="/assets/{{ post.preview-img }}" alt="">
+        <a class="post-link" href="{{ a-url }}"><img src="/assets/{{ post.preview-img }}" alt="{{ post.title }}"></a>
         <div class="row">
         <div class="col-sm-9 text-left">
           <h2>{{ post.title }}</h2>
@@ -15,7 +22,7 @@
         <div class="col-sm-3 portfolio-button">
           <!-- ADD IF statement to switch between 'view site' and 'more details' -->
           {% if post.item-url %}
-          <strong><a class="post-link" href="{{ post.item-url}}">View Site</a></strong>
+          <strong><a class="post-link" href="{{ post.item-url }}">View Site</a></strong>
           {% else %}
           <strong><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">Details</a></strong>
           {% endif %}

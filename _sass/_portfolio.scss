@@ -19,41 +19,59 @@
 				margin: 0 auto;
 			}
 			
-			.portfolio-button {
-				text-align: right;
-
-				a {
-			    display: block;
-			    width: 100%;
-			    border: 2px solid #343434;
-			    padding: 10px;
-			    color: #343434;
-			    text-align: center;
-			    text-transform: uppercase;
-			    text-decoration: none;
-			    transition: all 150ms ease-out;
-					
-					&:hover {
-						background-color: rgba(255,255,255,0.8);
-						border-color: transparent;
-						text-decoration: none;
-						transition: all 150ms ease-out;
-					}
-				}
-			}
 		}
 
 	}
 
 }
 
+/**
+ * Portfolio Item button
+ */
+.portfolio-button {
+	text-align: right;
+
+	a {
+    display: block;
+    width: 100%;
+    border: 2px solid #343434;
+    padding: 10px;
+    color: #343434;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 150ms ease-out;
+		
+		&:hover {
+			background-color: rgba(255,255,255,0.8);
+			border-color: transparent;
+			text-decoration: none;
+			transition: all 150ms ease-out;
+		}
+	}
+}
 
 /**
  * Portfolio Item classes
  */
 .tnp { background-color: #ff5b35; }
 .bb { background-color: #ffcc56; }
-.bge { background-color: #454545; }
-.mgtt { background-color: #345656; }
-.soco { background-color: red; }
-.marvin { background-color: green; }
+.bge { background-color: #44a347; }
+.mgtt { background-color: #58bde9; }
+.soco { background-color: #82151e; }
+.marvin { background-color: #3a3a3c; }
+
+.white-text {
+	* {
+		color: $white; 
+	}
+		.portfolio-button a {
+		border-color: $white;
+		color: $white;
+
+		&:hover {
+			border-color:transparent;
+			color: #454545;
+		}
+	}
+}

@@ -1,0 +1,40 @@
+
+/**
+ * Header-sidebar styles
+ */
+ header {
+ 	text-align: center;
+ 	float: right !important;
+
+ 	.subheader {
+ 		color: #c31;
+ 		margin: 0 0 25px 0;
+ 		font-size: 24px;
+ 	}
+
+ 	.logo {
+ 		height: auto;
+ 		width: 220px;
+ 	}
+	
+	p {
+		max-width: 325px;
+		width: 100%;
+		margin: 0 auto;
+		padding-bottom: 35px;
+	}
+
+	img {
+		margin: 75px 0 5px 0;
+	}
+
+	.social-media {
+		list-style: none;
+    margin-left: 0;
+
+    svg {
+    	width: 45px;
+    	height: auto;
+    }
+	}
+ }
