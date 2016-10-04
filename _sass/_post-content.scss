@@ -1,0 +1,50 @@
+/**
+ * Post content layout styles
+ */
+
+.post-content {
+	height: calc(100vh - 30px);
+	overflow: scroll;
+	overflow-x: hidden;
+
+	img {
+		width: 100%;
+	}
+
+	h1 {
+		font-size: 50px;
+	}
+
+	h2 {
+		padding-top: 30px;
+		opacity: 0.7;
+		font-family: "Muli", Helvetica, Arial, sans-serif;
+		font-size: 14px;
+	}
+
+	h3 {
+		font-family: "Muli", Helvetica, Arial, sans-serif;
+		font-size: 14px;
+	}
+
+	h4 {
+		font-family: "Muli", Helvetica, Arial, sans-serif;
+		opacity: 0.7;
+		font-size: 12px;
+		padding-top: 10px;
+		padding-bottom: 30px;
+	}
+	.post-info {
+		text-align: center;
+		margin: 0;
+	}
+
+	.back-section {
+		background-color: $content-bg-color;
+		text-align: center;
+		padding: 50px 0;
+	}
+	
+	.back-section.mgtt { background-color: #40515a; }
+
+}

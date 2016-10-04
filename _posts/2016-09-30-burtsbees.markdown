@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Burt's Bees - Natural Candles"
-permalink: thenewprimal
+permalink: burtsbees
 portfolio-class: bb
 item-number: 2
 preview-img: bb-cover.png
