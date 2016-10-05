@@ -5,7 +5,7 @@ permalink: mentorgraphics
 portfolio-class: mgtt
 item-number: 1
 preview-img: mgtt-cover.png
-role: "UX, UI, Visual, React/Redux Development"
+role: "UX , UI , Visual , ReactJS/Redux"
 ---
 
 ## Graybox/Mentor Graphics

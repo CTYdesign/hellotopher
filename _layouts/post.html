@@ -3,34 +3,4 @@ layout: default
 ---
 
 {% include header.html %}
-
-<div class="post-content col-xs-12 col-sm-8">
-	<div class="row">
-		<img src="/assets/{{ page.portfolio-class }}-header.jpg" class="img-responsive" alt="{{ post.title }}">
-	</div>
-	<div class="row">
-		<div class="post-info white-text {{ page.portfolio-class }}">
-			{{ content }}
-		</div>
-	</div>
-	<div class="row back-section {{ page.portfolio-class }}">
-		<button class="btn-back">
-	    <a href="{{ site.url }}">Back to see other works</a>
-	  </button>
-	</div>
-</div>
-
-
-<!-- 
-<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-
-  <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
-    <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
-  </header>
-
-  <div class="post-content" itemprop="articleBody">
-    {{ content }}
-  </div>
-
-</article> -->
+{% include portfolio-item.html %}

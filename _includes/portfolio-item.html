@@ -1,0 +1,17 @@
+<section class="portfolio-container col-xs-12 col-sm-8" id="portfolio-container">
+	<div class="post-content">
+		<div class="row">
+			<img src="/assets/{{ page.portfolio-class }}-header.jpg" class="img-responsive" alt="{{ post.title }}">
+		</div>
+		<div class="row">
+			<div class="post-info white-text {{ page.portfolio-class }}">
+				{{ content }}
+			</div>
+		</div>
+		<div class="row back-section {{ page.portfolio-class }}">
+			<button class="btn-back">
+		    <a href="{{ site.url }}">Back to see other works</a>
+		  </button>
+		</div>
+	</div>
+</section>
