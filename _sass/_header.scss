@@ -3,21 +3,52 @@
  * Header-sidebar styles
  */
 header {
-	transition: width 200ms linear;
+	// transition: width 200ms linear;
 	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	float: right !important;
 	height: calc(100vh - 30px);
+
+	.header-container {
+		text-align: center;
+	}
 
 	.subheader {
 		color: #c31;
 		margin: 0 0 25px 0;
 		font-size: 24px;
+		opacity: 0.8;
+		line-height: 30px;
+	}
+
+	.name {
+		line-height: 30px;
+		font-size: 38px;
+		margin: 10px 0 0 0;
+		color: #c31;
 	}
 
 	.logo {
 		height: auto;
 		width: 100px;
 		max-width: 100px;
+		text-align: center;
+		margin: 0 auto;
+
+		&:hover {
+			.svg-logo {
+				fill: #c31;
+			}
+		}
+	}
+
+	svg {
+		fill:#A09F9F;
+		&:hover {
+			fill:#c31;
+		}
 	}
 
 	p {
@@ -28,8 +59,8 @@ header {
 	}
 
 	img {
-		transition: all 200ms linear;
-		margin: 75px 0 5px 0;
+		// transition: all 200ms linear;
+		margin: 0px 0 5px 0;
 	}
 
 	.social-media {
@@ -42,29 +73,30 @@ header {
 	  }
 	}
 
-	p, .subheader, .btn-primary {
-		transition: opacity 100ms linear;
-		-webkit-transition: opacity 100ms linear;
-		-webkit-transition-delay: 200ms; /* Safari */
-	  transition-delay: 200ms;
-	  opacity: 1;
-	}
+	// p, .subheader, .btn-primary {
+	// 	transition: opacity 100ms linear;
+	// 	-webkit-transition: opacity 100ms linear;
+	// 	-webkit-transition-delay: 200ms; /* Safari */
+	//   transition-delay: 200ms;
+	//   opacity: 1;
+	// }
 }
 
 .collapsed {
-	transition: width 200ms linear;
-	-webkit-transition: width 200ms linear;
+	// transition: width 200ms linear;
+	// -webkit-transition: width 200ms linear;
 
-	p, .subheader, .btn-primary {
-		transition: opacity 50ms linear;
-		-webkit-transition: opacity 50ms linear;
-		opacity: 0;
-	};
+	p, .subheader, .btn-primary, .name {
+		// animation: collapse-content 200ms linear;
+		// animation-fill-mode: forwards;
+		display: none;
+	}
+
 	.logo {
-		max-width: 100px;
-		transition: all 200ms linear;
-		width: 100%;
-		margin: 15px 0 5px 0;
+		svg {
+			width: 100%;
+			padding: 0 10px;
+		}
 	}
 }
 
@@ -88,3 +120,27 @@ header {
 	}
 
  }
+
+ // @keyframes collapse-content {
+ // 	0% {
+	// 	opacity: 1;
+ // 	}
+ // 	99% {
+	// 	opacity: 0; display: none;
+ // 	}
+ // 	100% {
+	// 	opacity: 0; display: none;
+ // 	}
+ // }
+
+ //  @-webkit-keyframes collapse-content {
+ // 	0% {
+	// 	opacity: 1; visibility: vis
+ // 	}
+ // 	99% {
+	// 	opacity: 0;display: none;
+ // 	}
+ // 	100% {
+	// 	opacity: 0; display: none;
+ // 	}
+ // }

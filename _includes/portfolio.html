@@ -21,7 +21,7 @@
 
         <div class="col-sm-3 portfolio-button">
           {% if post.item-url %}
-          <strong><a class="post-link" href="{{ post.item-url }}">View Site</a></strong>
+          <strong><a class="post-link" href="{{ post.item-url }}" target="_blank">View Site</a></strong>
           {% else %}
           <strong><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">Details</a></strong>
           {% endif %}

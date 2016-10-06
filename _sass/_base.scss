@@ -99,14 +99,36 @@ a {
 
 .btn-toggle {
 	position: absolute;
+	background: url('../assets/collapse.png');
+	background-position: center center;
+	background-size: 20px 20px;
+	background-repeat: no-repeat;
+	height: 30px;
+	width: 30px;
 	bottom: 0;
 	right: 0;
-	border: 2px solid #ababab;
+	border: none;
 	color: #ababab;
 	background-color: transparent;
+	transition: opacity 200ms ease;
+	opacity: 0.5;
 
 	&:focus {
 		outline: none;
+	}
+
+	&:hover {
+		transition: opacity 200ms ease;
+		opacity: 1;
+	}
+}
+
+.collapsed {
+	.btn-toggle {
+		background: url('../assets/expand.png');
+		background-position: center center;
+		background-size: 20px 20px;
+		background-repeat: no-repeat;
 	}
 }
 
