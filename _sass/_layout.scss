@@ -4,26 +4,52 @@
 }
 
 /* Medium Devices, Desktops */
-@media only screen and (max-width : 992px) {
+@media only screen and (max-width : 991px) {
   header {
     float: none;
-    img {
+    display: relative;
+    height: auto;
+
+    .logo {
       margin-top: 35px;
     }
-    padding-bottom: 35px;
+
+    p, .btn-primary {
+      display: none;
+    }
+    padding-bottom: 10px;
   }
 
   .portfolio-container .portfolio {
     height: auto;
   }
+  
 
   .post-content {
     height: auto;
+  }
+
+  .btn-toggle {
+    display: none;
   }
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
+
+    .portfolio-container .portfolio {
+
+    .portfolio-item {
+     .item-details {
+        text-align: center; 
+      }
+    }
+  }
+
+  .portfolio-button {
+    width: 200px;
+    margin-top: 25px;
+  }
 
 }
 

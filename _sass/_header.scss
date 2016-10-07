@@ -32,7 +32,6 @@ header {
 
 	.logo {
 		height: auto;
-		width: 100px;
 		max-width: 100px;
 		text-align: center;
 		margin: 0 auto;
@@ -82,20 +81,21 @@ header {
 	// }
 }
 
-.collapsed {
-	// transition: width 200ms linear;
-	// -webkit-transition: width 200ms linear;
+@media only screen and (min-width : 992px) {
+	.collapsed {
+		// transition: width 200ms linear;
+		// -webkit-transition: width 200ms linear;
 
-	p, .subheader, .btn-primary, .name {
-		// animation: collapse-content 200ms linear;
-		// animation-fill-mode: forwards;
-		display: none;
-	}
+		p, .subheader, .btn-primary, .name {
+			// animation: collapse-content 200ms linear;
+			// animation-fill-mode: forwards;
+			display: none;
+		}
 
-	.logo {
-		svg {
-			width: 100%;
-			padding: 0 10px;
+		.logo {
+			svg {
+				width: 100%;
+			}
 		}
 	}
 }

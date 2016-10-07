@@ -24,7 +24,7 @@ function setToggleState() {
 		// toggle the value in localstorage
 		localStorage.setItem("header-collapsed", JSON.stringify(true));
 		// adjust classes based on toggle state
-		document.getElementById("portfolio-container").className = "portfolio-container col-xs-12 col-sm-11 expanded";
+		document.getElementById("portfolio-container").className = "portfolio-container col-xs-12 col-md-11 expanded";
 		document.getElementById("header-content").className = "col-xs-12 col-md-1 collapsed";
 		
 	}

@@ -1,9 +1,17 @@
-<header class="internal-header col-xs-12 col-sm-1">
+<header class="col-xs-12 col-md-4" id="header-content">
 
-  <h1 class="subheader">{{ site.title }}</h1>
+	<div class="header-container">
 
-  <button class="btn-back">
-    <a href=""> < </a>
-  </button>
+	  <a href="{{ site.url }}">
+	  	<div class="logo">
+	  		{% include logo.svg %}
+	  	</div>
+	  </a>
+	  <h1 class="name" id="header-info">Topher Young</h1>
+	  <h3 class="subheader" id="header-info">{{ site.subhead }}</h3>
+
+  </div>
+
+  <button class="btn-toggle" id="headerToggle"></button>
 
 </header>
