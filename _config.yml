@@ -11,9 +11,8 @@ email: topher@hellotopher.com
 description: > # this means to ignore newlines until "baseurl:"
   My name is Topher Young and I am a web designer & developer who specializes in creating highly usable, unique, and captivating interactive applications and products.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://localhost:4000/" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+url: "http://hellotopher.com" # the base hostname & protocol for your site
+github_username:  topheryoung
 subhead: "Designer & Developer"
 
 # Build settings

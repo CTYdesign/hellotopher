@@ -4,8 +4,8 @@
 body, h1, h2, h3, h4, h5, h6,
 p, blockquote, pre, hr,
 dl, dd, ol, ul, figure {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 
@@ -13,12 +13,12 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 html {
-    background-color: $background-color;
+  background-color: $background-color;
 }
 
 .site-content {
-    background-color: $content-bg-color;
-    margin: 15px;
+  background-color: $content-bg-color;
+  margin: 15px;
 }
 
 
@@ -39,62 +39,47 @@ h1, h2, h3, h4, h5, h6 {
 /**
  * Typography
  */
- .btn-primary {
- 	width: 200px;
- 	padding: 0;
- 	border: 2px solid #454545;
- 	background-color: transparent;
- 	transition: all 150ms ease-out;
-
- 	&:hover {
- 		background-color: #454545;
- 		border-color: transparent;
- 		transition: all 150ms ease-out;
- 		
- 		a {
-	 		text-decoration: none;
-	 		color: $white;
- 		}
- 	}
-	
-	a {
-		display: block;
-		padding: 10px;
-		width: 100%;
-		height: 100%;
-		color: #454545;
-		text-decoration: none;
-	}
-
- }
-
-.btn-back {
+ .btn {
+ 	display: block;
+	margin: 0 auto;
 	width: 200px;
-	padding: 0;
-	border: 2px solid #fff;
+	padding: 10px;
+	text-decoration: none;
 	background-color: transparent;
 	transition: all 150ms ease-out;
 
 	&:hover {
-		background-color: #fff;
 		border-color: transparent;
 		transition: all 150ms ease-out;
-		
-		a {
- 		text-decoration: none;
- 		color: #454545;
-		}
+		text-decoration: none;
 	}
+	&:focus,
+	&:active {
+		outline: 0;
+		text-decoration: none;
+	}
+ }
 
-a {
-	display: block;
-	padding: 10px;
-	width: 100%;
-	height: 100%;
-	color: #fff;
-	text-decoration: none;
+.btn-primary {
+	@extend .btn;
+	border: 2px solid #454545;
+	color: #454545;
+
+	&:hover {
+		background-color: #454545;
+		color: $white;
+	}
 }
 
+.btn-back {
+	@extend .btn;
+	border: 2px solid #fff;
+	color: #fff;
+
+	&:hover {
+		background-color: #fff;
+ 		color: #454545;
+	}
 }
 
 .btn-toggle {

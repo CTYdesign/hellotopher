@@ -1,0 +1,12 @@
+---
+layout: post
+title:  "Cantey Technology"
+permalink: /cantey.html
+portfolio-class: "cantey"
+item-number: 7
+preview-img: cantey-cover.png
+role: "Visual Design, Front-end Development"
+item-url: http://canteytech.com/
+---
+
+This is being linked out so leave this blank.

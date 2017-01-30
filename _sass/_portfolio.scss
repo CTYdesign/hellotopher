@@ -2,11 +2,9 @@
  * Portfolio Layout classes
  */
 .portfolio-container {
-	// transition: width 200ms linear;
 	padding: 0;
 
 	.portfolio {
-
 		height: calc(100vh - 30px);
 		overflow: auto;
 		margin: 0;
@@ -26,11 +24,8 @@
 			.item-details {
 				text-align: left;
 			}
-			
 		}
-
 	}
-
 }
 
 /**
@@ -68,12 +63,15 @@
 .mgtt { background-color: #58bde9; }
 .soco { background-color: #82151e; }
 .marvin { background-color: #3a3a3c; }
+.mtpleasant { background-color: #00c1b8; }
+.cantey { background-color: #a8d38c; }
 
 .white-text {
 	* {
 		color: $white; 
 	}
-		.portfolio-button a {
+	
+	.portfolio-button a {
 		border-color: $white;
 		color: $white;
 
@@ -85,5 +83,4 @@
 }
 
 .expanded {
-	// transition: width 200ms linear;
 }

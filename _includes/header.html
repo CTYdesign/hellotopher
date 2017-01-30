@@ -4,16 +4,20 @@
 
 	  <a href="{{ site.url }}">
 	  	<div class="logo">
-	  		{% include logo.svg %}
+	  		<img src="/assets/topher.png" alt="{{ post.title }}">
 	  	</div>
 	  </a>
-	  <h1 class="name" id="header-info">Topher Young</h1>
-	  <h3 class="subheader" id="header-info">{{ site.subhead }}</h3>
-	  <p id="header-info">{{ site.description }}</p>
+	  <h1 class="name">Topher Young</h1>
+	  <h3 class="subheader">{{ site.subhead }}</h3>
+	  <p>{{ site.description }}</p>
 
-	  <button class="btn-primary" id="header-info">
-	    <a href="">View My Resume</a>
-	  </button>
+    <a href="/assets/topherYoungResume.pdf" target="_blank" class="btn-primary">View My Resume</a>
+
+    <div class="social">
+	  	<a href="https://dribbble.com/topheryoung" target="_blank">{% include social-media-01.svg %}</a>
+	  	<a href="https://github.com/ctydesign" target="_blank">{% include social-media-02.svg %}</a>
+	  	<a href="https://www.linkedin.com/in/ctopheryoung" target="_blank">{% include social-media-03.svg %}</a>
+	  </div>
 
   </div>
 

@@ -23,7 +23,6 @@
   .portfolio-container .portfolio {
     height: auto;
   }
-  
 
   .post-content {
     height: auto;
@@ -37,8 +36,7 @@
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
 
-    .portfolio-container .portfolio {
-
+  .portfolio-container .portfolio {
     .portfolio-item {
      .item-details {
         text-align: center; 
@@ -48,7 +46,7 @@
 
   .portfolio-button {
     width: 200px;
-    margin-top: 25px;
+    margin: 25px auto 0 auto;
   }
 
 }

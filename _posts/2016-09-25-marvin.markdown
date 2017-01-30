@@ -1,0 +1,12 @@
+---
+layout: post
+title:  "Marvin Radio - In Progress"
+permalink: /marvin.html
+portfolio-class: "marvin white-text"
+item-number: 8
+preview-img: marvin-cover.png
+role: "UI, UX, Visual Design, ReactJS/Redux/ExpressJS/NodeJS Development"
+item-url: https://github.com/topheryoung/marvin_music_app
+---
+
+This is being linked out so leave this blank.

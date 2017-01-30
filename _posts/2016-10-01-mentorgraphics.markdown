@@ -1,18 +1,18 @@
 ---
 layout: post
 title:  "Mentor Graphics - Time Tracker"
-permalink: mentorgraphics
+permalink: /mentorgraphics.html
 portfolio-class: mgtt
-item-number: 1
+item-number: 2
 preview-img: mgtt-cover.png
-role: "UX , UI , Visual , ReactJS/Redux"
+role: "UX , UI , Visual Design , ReactJS/Redux Development"
 ---
 
 ## Graybox/Mentor Graphics
 
 # Time Tracker App
 
-### UI , UX , Visual , React/Redux Development
+### UI , UX , Visual Design , React/Redux Development
 
 #### - 2016 -
 

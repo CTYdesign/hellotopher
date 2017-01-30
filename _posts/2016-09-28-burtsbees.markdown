@@ -1,11 +1,12 @@
 ---
 layout: post
 title:  "Burt's Bees - Natural Candles"
-permalink: burtsbees
+permalink: /burtsbees.html
 portfolio-class: bb
-item-number: 2
+item-number: 5
 preview-img: bb-cover.png
-role: "UX , Visual"
+role: "UX , Visual Design, Front-end Development"
+item-url: http://burtsbeescandles.com
 ---
 ## Levelwing/Burt's Bees
 

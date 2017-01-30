@@ -1,7 +1,6 @@
 /**
  * Post content layout styles
  */
-
 .post-content {
 	height: calc(100vh - 30px);
 	overflow: auto;
@@ -13,6 +12,8 @@
 
 	h1 {
 		font-size: 50px;
+		line-height: 40px;
+		padding-bottom: 10px;
 	}
 
 	h2 {
@@ -20,6 +21,7 @@
 		opacity: 0.7;
 		font-family: "Muli", Helvetica, Arial, sans-serif;
 		font-size: 14px;
+		padding-bottom: 10px;
 	}
 
 	h3 {
@@ -38,6 +40,9 @@
 		text-align: center;
 		margin: 0;
 	}
+	.content-meta-info {
+		margin: 0;
+	}
 
 	.back-section {
 		background-color: $content-bg-color;
@@ -47,4 +52,14 @@
 	
 	.back-section.mgtt { background-color: #40515a; }
 	.back-section.bb { background-color: #453a28; }
+	.back-section.soco { background-color: #d7b36c; }
+
+	.copyright {
+		background-color: #cdcdcd;
+		text-align: center;
+
+		p {
+			padding: 15px 0;
+		}
+	}
 }

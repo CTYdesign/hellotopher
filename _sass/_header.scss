@@ -3,12 +3,10 @@
  * Header-sidebar styles
  */
 header {
-	// transition: width 200ms linear;
 	text-align: center;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	// float: right !important;
 	height: calc(100vh - 30px);
 
 	.header-container {
@@ -32,9 +30,12 @@ header {
 
 	.logo {
 		height: auto;
-		max-width: 100px;
+		max-width: 130px;
 		text-align: center;
 		margin: 0 auto;
+		img {
+			width: 100%;
+		}
 	}
 
 	svg {
@@ -54,37 +55,29 @@ header {
 	}
 
 	img {
-		// transition: all 200ms linear;
 		margin: 0px 0 5px 0;
 	}
+	
+	.social {
+		padding: 25px 0 0 0;
 
-	.social-media {
-		list-style: none;
-	  margin-left: 0;
+		a {
+			text-decoration: none;
+		}
 
-	  svg {
-	  	width: 45px;
-	  	height: auto;
-	  }
+		svg {
+			display: inline-block;
+			height: 30px;
+			width: 30px;
+			margin: 0 5px;
+		}
 	}
-
-	// p, .subheader, .btn-primary {
-	// 	transition: opacity 100ms linear;
-	// 	-webkit-transition: opacity 100ms linear;
-	// 	-webkit-transition-delay: 200ms; /* Safari */
-	//   transition-delay: 200ms;
-	//   opacity: 1;
-	// }
 }
 
 @media only screen and (min-width : 992px) {
 	.collapsed {
-		// transition: width 200ms linear;
-		// -webkit-transition: width 200ms linear;
 
-		p, .subheader, .btn-primary, .name {
-			// animation: collapse-content 200ms linear;
-			// animation-fill-mode: forwards;
+		p, .subheader, .btn-primary, .name, .social {
 			display: none;
 		}
 
@@ -97,46 +90,21 @@ header {
 }
 
 
- .internal-header {
- 	height: calc(100vh - 30px);
+.internal-header {
+	height: calc(100vh - 30px);
 
- 	.subheader {
- 		transform: rotate(-90deg);
-    position: relative;
-    bottom: 0;
-    width: 300px;
- 	}
+	.subheader {
+		transform: rotate(-90deg);
+		position: relative;
+		bottom: 0;
+		width: 300px;
+	}
 	.btn-back {
 		width: 100%;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    background-color: transparent;
-    padding: 10px 0;
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		background-color: transparent;
+		padding: 10px 0;
 	}
-
- }
-
- // @keyframes collapse-content {
- // 	0% {
-	// 	opacity: 1;
- // 	}
- // 	99% {
-	// 	opacity: 0; display: none;
- // 	}
- // 	100% {
-	// 	opacity: 0; display: none;
- // 	}
- // }
-
- //  @-webkit-keyframes collapse-content {
- // 	0% {
-	// 	opacity: 1; visibility: vis
- // 	}
- // 	99% {
-	// 	opacity: 0;display: none;
- // 	}
- // 	100% {
-	// 	opacity: 0; display: none;
- // 	}
- // }
+}
